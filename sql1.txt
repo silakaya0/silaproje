@@ -1,0 +1,34 @@
+
+ilk olarak school_library diye bir tane database oluşturmalısın
+
+create table UYELER(
+UyeNo int not null identity(1,1) Primary Key,
+UyeAdi nvarchar(50) not null,
+UyeSoyadi nvarchar(50) not null,
+Cinsiyet nchar(50),
+Telefon int,
+Eposta nvarchar(20)
+);
+
+create table ADRESLER(
+AdresNo int not null Primary Key,
+Sehir nvarchar(50) not null,
+Mahalle nvarchar(50) not null,
+BinaNo int,
+Cadde nvarchar,
+Ulke nvarchar(30),
+PostaKodu int
+);
+
+create table KUTUPHANE(
+KütüphaneNo int not null Primary Key,
+KutuphaneIsmi nvarchar(50) not null,
+Acıklama nvarchar(50)
+);
+
+create table YAZARLAR(
+YazarNo int not null Primary Key,
+YazarAdi nvarchar(50) ,
+YazarSoyadi nvarchar(50)
+);
+
